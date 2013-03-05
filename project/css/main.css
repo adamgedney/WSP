@@ -51,9 +51,9 @@ body{
 }
 
 h1{
-	font-size: 4.9em;
-	line-height: 1.1em;
-	color:#8A0808;
+	font-size: 4.1em;
+	line-height: 1.3em;
+	color:#fafafa;
 }
 
 h2{
@@ -84,7 +84,8 @@ a{
 }
 
 .strong{
-	font-weight:700;
+	font-weight:500;
+	color: #393939;
 }
 
 /*--------------------------------------End General / Start Main------------------------------------*/
@@ -96,9 +97,14 @@ a{
 }
 
 header{
+	height: 50px;
+	background: #393939;
 	border-bottom: 1px solid #6e6e6e;
 }
 
+header h1{
+	margin-left: 217px;
+}
 .content{
 	padding-top: 10px;
 }
@@ -119,6 +125,10 @@ header{
 	margin-left:40px;
 }
 
+footer{
+	height: 100px;
+	background: #393939;
+}
 
 
 
