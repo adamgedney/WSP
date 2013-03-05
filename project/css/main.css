@@ -45,8 +45,8 @@ list-style: none;
 
 
 body{
-	background: #fafafa;
-	color: #6e6e6e;
+	background: url("../images/noise.png") #fafafa;
+	color: #424242;
 	font: 62.5% "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 }
 
@@ -63,13 +63,14 @@ h2{
 }
 
 h3{
+	color: #1c1c1c;
 	font-size: 1.9em;
 	line-height: 1.8em;
 }
 
 p, ul, ol, dl{
 	font-size: 1.8em;
-	line-height: 1.5;
+	line-height: 2.1;
 	margin-bottom: 20px;
 	font-weight: 100;
 }
@@ -85,7 +86,6 @@ a{
 
 .strong{
 	font-weight:500;
-	color: #393939;
 }
 
 /*--------------------------------------End General / Start Main------------------------------------*/
@@ -108,7 +108,7 @@ header h1{
 .content{
 	padding-top: 10px;
 }
-.content h2:first-child, ul:first-child{
+.content h2:first-child{
 	border-bottom: 1px solid #6e6e6e;
 }
 
