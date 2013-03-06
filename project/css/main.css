@@ -9,6 +9,15 @@
 "Good UI design is humble.” – Jono DiCarlo
 */
 
+
+/*==============COLORS=====================
+
+body bg
+p font
+
+==========================================*/
+
+
 /*--------------------------------------Start CSS Reset---------------------------------------------*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -94,24 +103,56 @@ a{
 	width: 960px;
 	margin: 0 auto;
 	padding-top: 10px;
+	overflow: hidden;
 }
 
 header{
-	height: 50px;
-	background: #393939;
+	height: 150px;
 	border-bottom: 1px solid #6e6e6e;
+	padding: 0 20px;
 }
 
 header h1{
-	margin-left: 217px;
+	display: inline-block;
+	background: url("../images/logo.png") no-repeat;
+	width: 396px;
+	height: 99px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+nav{
+	float: right;
+}
+
+nav ul{
+	overflow: hidden;
+}
+
+nav ul li{   /* do I really have to define a width EVERY time I float?  Screws up my nav*/
+	float: left;
+	padding: 5px;
+}
+
+nav ul li a{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: .7em;
+}
+
+nav ul li a:hover{
+	color: #8A0808;
 }
 
 footer{
 	height: 100px;
-	background: #393939;
 }
 
-
+footer p{
+	width: 450px;
+	margin: 0 auto;
+}
 
 
 
