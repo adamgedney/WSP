@@ -53,6 +53,7 @@ font: 62.5% "Helvetica Neue Light", Helvetica, Arial, sans-serif;
 h1{
 font-size: 6.9em;
 line-height: 1.1em;
+margin: 40px 0 20px;
 }
 
 h2{
@@ -80,6 +81,9 @@ text-decoration: none;
 color: #08298A;
 }
 
+img{
+	margin-bottom: 40px;
+}
 
 /*--------------------------------------End General / Start Main------------------------------------*/
 
