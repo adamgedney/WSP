@@ -147,8 +147,8 @@ blockquote{
 }
 
 .button:hover{
-	background: #fff;
-	color: #000;
+	background: none;
+	color: #045B8C;
 	transition-duration: 1s
 }
 
@@ -170,8 +170,8 @@ blockquote{
 }
 
 .button-small:hover{
-	background: #fff;
-	color: #000;
+	background: none;
+	color: #045B8C;
 	transition-duration: .8s
 }
 
@@ -259,6 +259,7 @@ nav ul li a:hover{
 .landing .button{
 	width: 288px; /* 25.263158% 288px from 1140px */
 	margin: 0 auto 108px;
+	opacity: .6;
 }
 
 
@@ -286,12 +287,16 @@ nav ul li a:hover{
 
 .entry-points .fourcol{
 	text-align: center;
-	border-right: solid 1px #000;
+	border-left: solid 1px #000;
 	overflow: visible;
 }
 
-.entry-points .fourcol:last-child{
-	border-right: none;
+.entry-points .fourcol:first-child{
+	border-left: none;
+}
+
+.entry-points .fourcol:last-child p{
+	margin-bottom: 60px;
 }
 
 .entry-points .button-small{
