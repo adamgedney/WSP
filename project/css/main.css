@@ -391,6 +391,8 @@ nav ul li a:hover{
 
 
 
+
+
 /*--------------------------------------End / Start Footer-------------------------------*/
 
 
@@ -436,6 +438,46 @@ footer nav ul li a:hover{
 
 
 
+/*--------------------------------------Contact Page-------------------------------*/
+
+
+#page{
+	min-height: 912px;
+	padding-top: 96px;
+}
+
+.image-sub{
+	margin-top: 90px;
+
+}
+
+.image-sub img{
+	display: block;
+	width: 196px;
+	height: 123px;
+	margin: 0 auto 21px;
+}
+
+#contact-form{
+	width: 592px;
+}
+.input-label{
+	overflow: hidden;
+}
+
+.input-label label{
+	float: left;
+}
+
+.input-label input{
+	float: left;
+}
+
+input.button-small{
+	width: 241px;
+	float: right;
+	border: none;
+}
 
 
 
