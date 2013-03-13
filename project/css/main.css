@@ -273,7 +273,7 @@ nav ul li a:hover{
 /*--------------------------------------End Landing/ Start Entry Points-------------------------------*/
 
 .entry-points.container{
-	background: #5E6462;
+	background: url("../images/tree-hp.png") #5E6462 no-repeat 0 20px;
 	overflow: visible;
 	padding: 18px 0;
 }
