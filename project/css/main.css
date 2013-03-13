@@ -485,6 +485,7 @@ footer nav ul li a:hover{
 
 .input-label input{
 	float: left;
+	margin-bottom: 9px;
 }
 
 input.button-small{
