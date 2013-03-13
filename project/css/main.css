@@ -378,11 +378,11 @@ nav ul li a:hover{
 	overflow: hidden;
 }
 
-.home-detail-content h2{
+.home-detail-content h2, .detail-content h2{
 	margin-bottom: 36px;
 }
 
-.home-detail-content .button{
+.home-detail-content .button, .detail-content .button{
 	width: 288px; /* 64.038423% 288 from 449.73 (fivecol width)  */
 	float: right;
 	display: block;
@@ -437,13 +437,21 @@ footer nav ul li a:hover{
 
 
 
-
-/*--------------------------------------Contact Page-------------------------------*/
+/*--------------------------------------Page/Contact Page-------------------------------*/
 
 
 #page{
 	min-height: 912px;
 	padding-top: 96px;
+}
+
+.detail-content{
+	margin-top: 0;
+}
+
+.sixcol.detail-content{
+	float: right;
+	margin-right: 65px;
 }
 
 .image-sub{
@@ -457,6 +465,8 @@ footer nav ul li a:hover{
 	height: 123px;
 	margin: 0 auto 21px;
 }
+
+/*---------------------------------------*/
 
 #contact-form{
 	width: 592px;
