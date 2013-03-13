@@ -123,7 +123,11 @@ blockquote{
 	margin: 36px 8.004803%; /* 36 from 449.73 (fivecol width) */
 }
 
+input{
+	font-size: 2.1em;
+	color: #CECECE;
 
+}
 
 
 /*--------------------------------------End General/ Start Buttons-------------------------------*/
@@ -493,7 +497,34 @@ input.button-small{
 
 
 
+/*--------------------------------------DOmain Name Page-------------------------------*/
 
+form#domain{
+	overflow: hidden;
+	margin-bottom: 18px;
+}
+
+form#domain select{
+	float:left;
+	width: 80px;
+	height: 41px;
+	border: solid 1px #000;
+	font-size: 2.1em;
+	margin-left: 5px;
+}
+
+input#domain-search{
+	width: 351px;
+	height: 34px;
+	float: left;
+}
+
+input.button-small{
+	width: 80px;
+	height: 40px;
+	float: left;
+	margin-left: 5px;
+}
 
 
 
