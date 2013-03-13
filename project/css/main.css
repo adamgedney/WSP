@@ -18,6 +18,13 @@ p font
 ==========================================*/
 
 
+/*==============FONTS=======================
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Varela Round', sans-serif;
+
+==========================================*/
+
 /*--------------------------------------Start CSS Reset---------------------------------------------*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -52,30 +59,45 @@ list-style: none;
 
 
 body{
-	background: url("../images/noise.png") #fafafa;
 	color: #424242;
-	font: 62.5% "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+	font: 62.5% 'Open Sans', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
 }
 
 h1{
+	font-family: 'Varela Round', sans-serif;
 	font-size: 3.8em;
-	line-height: 1.3em;
-	color:#fafafa;
+	line-height: 1.5em;
+	color: #000;
+	text-transform: uppercase;
+}
+
+h2, h3, h4, h5{
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
 }
 
 h2{
 	font-size: 2.6em;
+	font-weight: 100;
 	line-height: 1.14em;
-	color:#8A0808;
+	color: #000;
+}
+
+h2.alt{
+	font-weight: 100;
+}
+
+h2.alt strong{
+	font-weight:400;
 }
 
 h3{
-	color: #1c1c1c;
+	color: #000;
 	font-size: 1.9em;
 	line-height: 1.8em;
 }
 
-p, ul, ol, dl{
+p, ul, ol, dl, blockquote{
 	font-size: 1.8em;
 	line-height: 2.1;
 	margin-bottom: 20px;
@@ -87,33 +109,91 @@ ul{
 }
 
 a{
+	outline: none;
 	text-decoration: none;
-	color: #08298A;
+	color: #045B8C;
 }
 
-.strong{
-	font-weight:500;
+strong{
+	font-weight: 700;
 }
 
-/*--------------------------------------End General / Start Main------------------------------------*/
-
-#wrapper {	
-	width: 960px;
-	margin: 0 auto;
-	padding-top: 10px;
-	overflow: hidden;
+blockquote{
+	font-style: italic;
+	margin: 36px 8.004803%; /* 36 from 449.73 (fivecol width) */
 }
+
+
+
+
+/*--------------------------------------End General/ Start Buttons-------------------------------*/
+
+
+.button{
+	display: block;
+	width:288px;
+	height:72px;
+	background: #000;
+	color:#fff;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 72px;
+	font-size: 2.1em;
+}
+
+.button:visited{
+	background: #red;
+	color: #fff;
+}
+
+.button:hover{
+	background: #fff;
+	color: #000;
+	transition-duration: 1s
+}
+
+.button-small{
+	display: block;
+	width:241px;
+	height:72px;
+	background: #000;
+	color:#fff;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 72px;
+	font-size: 1.8em;
+}
+
+.button-small:visited{
+	background: #red;
+	color: #fff;
+}
+
+.button-small:hover{
+	background: #fff;
+	color: #000;
+	transition-duration: .8s
+}
+
+
+
+
+
+
+
+/*--------------------------------------End Buttons/ Start Header------------------------------------*/
+
 
 header{
-	height: 150px;
+	height: 108px;
 	border-bottom: 1px solid #6e6e6e;
-	padding: 0 20px;
+	padding: 0 1.754386%; /* 20 from 1140 */
 }
 
 header h1{
 	display: inline-block;
 	background: url("../images/logo.png") no-repeat;
-	width: 396px;
+	width: 34.736842%; /*396px from 1140px */
 	height: 99px;
 	text-indent: 100%;
 	white-space: nowrap;
@@ -122,34 +202,199 @@ header h1{
 
 nav{
 	float: right;
+	margin-top: 54px;
 }
 
 nav ul{
 	overflow: hidden;
 }
 
-nav ul li{   /* do I really have to define a width EVERY time I float?  Screws up my nav*/
+nav ul li{   
 	float: left;
-	padding: 5px;
+	padding: 5px 10px; /* not sure where to get the context width from? */
 }
 
 nav ul li a{
 	text-transform: uppercase;
 	text-align: center;
-	font-size: .7em;
+	font-weight: 500;
 }
 
 nav ul li a:hover{
 	color: #8A0808;
+	transition-duration: .8s
 }
 
+
+
+
+
+/*--------------------------------------End Header/ Start Landing-------------------------------*/
+
+.home-featured.container{
+	background: url("../images/Woman_using_computer.jpg") no-repeat #fafafa center top;
+		-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.landing {
+	margin: 54px 10% 0;
+	text-align: center;
+}
+
+.landing h2{
+	margin-bottom: 54px;
+}
+
+.landing p{
+	width: 50%;
+	margin: 0 25% 108px;
+	
+}
+
+.landing .button{
+	width: 288px; /* 25.263158% 288px from 1140px */
+	margin: 0 auto 108px;
+}
+
+
+
+
+
+/*--------------------------------------End Landing/ Start Entry Points-------------------------------*/
+
+.entry-points.container{
+	background: #5E6462;
+	overflow: visible;
+	padding: 18px 0;
+}
+
+/* -----------------adding overflow:visible breaks the framework's floats--------------------
+.entry-points, .row{
+	overflow: visible;
+}
+*/
+
+.row .fourcol {
+	width: 30.74%;
+	
+}
+
+.entry-points .fourcol{
+	text-align: center;
+	border-right: solid 1px #000;
+	overflow: visible;
+}
+
+.entry-points .fourcol:last-child{
+	border-right: none;
+}
+
+.entry-points .button-small{
+	width: 241px; /* 68.749109% 241 from 350.55(fourcol width) */
+	margin: 36px auto 30px;
+}
+
+.entry-points img{
+	display: block;
+	margin: 0 auto;
+}
+
+.entry-points p, .entry-points h2{
+	color: #fff;
+	text-align: left;
+	margin: 6px 14.833833%; /* 52 from 350.55 */
+	width: 69.890173%; /* 245 from 350.55 */
+}
+.entry-points p{
+	font-size: 1.6em;
+	line-height: 1.7em;
+}
+
+
+
+
+/*--------------------------------------End Entry Points / Start Home Details-------------------------------*/
+
+
+.home-detail.container{
+	background: #fff;
+	height: 792px;
+}
+
+
+/*-------------Thumbnail Grid --------------*/
+
+
+.thumbnail-grid{
+	margin: 132px 7.2% 132px 0; /* 14.619883% 80 from  547.2 (sixcol width)  7.2% is an estimate */
+}
+
+.thumbnail-grid img{
+	width: 24.122807%; /* 132 from 547.2 (sixcol width) */
+	float: left;
+	opacity: .5;
+}
+
+.thumbnail-grid img:first-child{
+	margin-left: 48.245614%; /* 264 from 547.2 */
+	margin-right: 24.122807%; /* 132 from 547.2 */
+}
+
+.thumbnail-grid img:nth-child(4){
+	margin-right: 24.122807%; /* 132 from 547.2 */
+	opacity: 1;
+}
+
+.thumbnail-grid img:nth-child(5){
+	margin-left: 24.122807%; /* 132 from 547.2 */
+}
+
+.thumbnail-grid img:nth-child(8){
+	margin-left: 48.245614%; /* 264 from 547.2 */
+}
+
+.thumbnail-grid img:hover{
+	opacity: 1;
+	transition-duration: .8s
+}
+
+
+/*-------------End Thumbnail Grid --------------*/
+
+.home-detail-content{
+	color: #000;
+	margin-top: 132px;
+	overflow: hidden;
+}
+
+.home-detail-content h2{
+	margin-bottom: 36px;
+}
+
+.home-detail-content .button{
+	width: 288px; /* 64.038423% 288 from 449.73 (fivecol width)  */
+	float: right;
+	display: block;
+	margin-top: 18px;
+}
+
+
+
+/*--------------------------------------End / Start Footer-------------------------------*/
+
+
 footer{
-	height: 100px;
+	background: #000;
+	height: 108px;
 }
 
 footer p{
-	width: 450px;
-	margin: 0 auto;
+	color: #fff;
+	width: 39.473684%; /* 450 from 1140 */
+	margin: 30px auto;
 }
 
 
