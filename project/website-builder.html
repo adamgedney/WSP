@@ -109,10 +109,7 @@ winslide.focus()
 									function slideit(){
 									if (!document.images)
 									return
-									
-																		document.images.slide.style.filter="blendTrans(duration=2)"
-      document.images.slide.style.filter="blendTrans(duration=crossFadeDuration)"
-      document.images.slide.filters.blendTrans.Apply()
+									document.images.slide.src=slideimages[whichimage].src
 									whichlink=whichimage
 									if (whichimage<slideimages.length-1)
 									whichimage++
