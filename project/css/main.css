@@ -130,7 +130,31 @@ input{
 }
 
 
-/*--------------------------------------End General/ Start Buttons-------------------------------*/
+
+
+
+/*--------------------------------------Micro Clearfix--------------------------------------------*/
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+/*-------------------------------------- Start Buttons-------------------------------------------*/
 
 
 .button{
@@ -243,6 +267,7 @@ nav ul li a:hover{
 		   -moz-background-size: cover;
 			 -o-background-size: cover;
 				background-size: cover;
+	float: left;
 }
 
 .landing {
@@ -292,7 +317,7 @@ nav ul li a:hover{
 .entry-points .fourcol{
 	text-align: center;
 	border-left: solid 1px #000;
-	overflow: visible;
+	margin-top: -60px;
 }
 
 .entry-points .fourcol:first-child{
