@@ -91,7 +91,7 @@ h2.alt strong{
 	font-weight:400;
 }
 
-h3{
+h3, label, legend{
 	color: #000;
 	font-size: 1.9em;
 	line-height: 1.8em;
@@ -407,7 +407,7 @@ nav ul li a:hover{
 	overflow: hidden;
 }
 
-.home-detail-content h2, .detail-content h2{
+.home-detail-content h2, .detail-content h2 {
 	margin-bottom: 36px;
 }
 
@@ -471,11 +471,15 @@ footer nav ul li a:hover{
 
 #page{
 	min-height: 912px;
-	padding-top: 96px;
+	padding-top: 196px;
 }
 
 .detail-content{
 	margin-top: 0;
+}
+
+.detail-content [type="submit"] {
+	border: none;
 }
 
 .sixcol.detail-content{
@@ -498,30 +502,62 @@ footer nav ul li a:hover{
 /*---------------------------------------*/
 
 #contact-form{
-	width: 592px;
+	width: 420px;
 }
 .input-label{
-	overflow: hidden;
+	overflow: auto;
 }
 
 .input-label label{
+	width: 70px;
 	float: left;
+	text-align: right;
+	margin-right: 10px;
+	line-height: .8em;
 }
 
-.input-label input{
-	float: left;
-	margin-bottom: 9px;
+.input-label input, textarea{
+	width: 320px;
+	float: right;
+	margin-bottom: 18px;
 }
 
-input.button-small{
-	width: 241px;
+.input-label select{
+	width: 160px;
+	height: 18px;
+	margin-left: 15px;
+}
+
+.input-label .button-small{
+	width: 100px;
 	float: right;
 	border: none;
 }
 
+.checkbox{
+	margin: 18px 0;
+}
 
+.checkbox input{
+	width: 21px;
+	height: 21px;
+	float: left;
+	margin-left: 95px;
+}
 
+.checkbox label{
+	width: 200px;
+	float: left;
+	text-align: left;
+	margin-left: 10px;
+}
 
+.checkbox legend{
+	width: 70px;
+	margin-bottom: -33px;
+	line-height: .9em;
+	text-align: right;
+}
 
 /*--------------------------------------DOmain Name Page-------------------------------*/
 
@@ -551,8 +587,6 @@ input.button-small{
 	float: left;
 	margin-left: 5px;
 }
-
-
 
 
 
