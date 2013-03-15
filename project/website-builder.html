@@ -116,6 +116,11 @@ winslide.focus()
 									else
 									whichimage=0
 									setTimeout("slideit()",slideshowspeed)
+
+									document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+      
 									}
 									slideit()
 
