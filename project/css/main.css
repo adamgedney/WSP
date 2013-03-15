@@ -487,6 +487,11 @@ footer nav ul li a:hover{
 	margin-right: 65px;
 }
 
+.slider{
+	width: 330px;
+	height: 442px;
+	background: url("../images/shadow.png") no-repeat bottom center;
+}
 .image-sub{
 	margin-top: 90px;
 
