@@ -110,17 +110,17 @@ winslide.focus()
 									if (!document.images)
 									return
 									document.images.slide.src=slideimages[whichimage].src
+
+									document.images.SlideShow.style.filter="blendTrans(duration=2)"
+      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.SlideShow.filters.blendTrans.Apply()
+      
 									whichlink=whichimage
 									if (whichimage<slideimages.length-1)
 									whichimage++
 									else
 									whichimage=0
 									setTimeout("slideit()",slideshowspeed)
-
-									document.images.SlideShow.style.filter="blendTrans(duration=2)"
-      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
-      document.images.SlideShow.filters.blendTrans.Apply()
-      
 									}
 									slideit()
 
