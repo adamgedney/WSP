@@ -111,10 +111,10 @@ winslide.focus()
 									return
 									document.images.slide.src=slideimages[whichimage].src
 
-									document.images.SlideShow.style.filter="blendTrans(duration=2)"
-      document.images.SlideShow.style.filter="blendTrans(duration=crossFadeDuration)"
-      document.images.SlideShow.filters.blendTrans.Apply()
-      
+									document.images.slide.style.filter="blendTrans(duration=2)"
+      document.images.slide.style.filter="blendTrans(duration=crossFadeDuration)"
+      document.images.slide.filters.blendTrans.Apply()
+
 									whichlink=whichimage
 									if (whichimage<slideimages.length-1)
 									whichimage++
