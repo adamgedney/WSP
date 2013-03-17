@@ -267,6 +267,7 @@ nav ul li a:hover{
 		   -moz-background-size: cover;
 			 -o-background-size: cover;
 				background-size: cover;
+	height: 864px;
 }
 
 .landing {
