@@ -261,13 +261,12 @@ nav ul li a:hover{
 
 /*--------------------------------------End Header/ Start Landing-------------------------------*/
 
-.home-featured {
+.container.home-image{
 	background: url("../images/Woman_using_computer.jpg") no-repeat #fafafa center top;
 		-webkit-background-size: cover;
 		   -moz-background-size: cover;
 			 -o-background-size: cover;
 				background-size: cover;
-	float: left;
 }
 
 .landing {
