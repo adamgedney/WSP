@@ -111,7 +111,7 @@ ul{
 a{
 	outline: none;
 	text-decoration: none;
-	color: #045B8C;
+	color: #5e4f77;
 }
 
 strong{
@@ -219,7 +219,7 @@ input{
 
 header{
 	height: 108px;
-	border-bottom: 1px solid #6e6e6e;
+	width: 100%;
 	padding: 0 1.754386%; /* 20 from 1140 */
 	overflow: hidden;
 }
@@ -228,40 +228,44 @@ header h1{
 	float: left;
 	display: inline-block;
 	background: url("../images/logo.png") no-repeat;
-	width: 34.736842%; /*396px from 1140px */
+	max-width: 100%;
 	height: 99px;
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
-nav{
+header nav{
 	float: right;
 	margin-top: 54px;
 }
 
-nav ul{
+header nav ul{
 	overflow: hidden;
 }
 
-nav ul li{   
+header nav ul li{   
 	float: left;
 	padding: 5px 10px; /* not sure where to get the context width from? */
 }
 
-nav ul li a{
+header nav ul li a{
 	text-transform: uppercase;
 	text-align: center;
 	font-weight: 500;
+	color: #f4f4f4;
 }
 
-nav ul li a:hover{
+header nav ul li a:hover{
 	color: #8A0808;
 	transition-duration: .8s
 }
 
-
-
+/* .home-featured{
+	-webkit-box-shadow: inset 0px -4px 5px 0px #1A1915;
+        	box-shadow: inset 0px -4px 5px 0px #1A1915;
+}
+*/
 
 
 /*--------------------------------------End Header/ Start Landing-------------------------------*/
@@ -279,6 +283,10 @@ nav ul li a:hover{
 .landing {
 	margin: 54px 10% 0;
 	text-align: center;
+}
+
+.landing h1, .landing h2, .landing p{
+	color: #f4f4f4;
 }
 
 .landing h2{
@@ -306,13 +314,9 @@ nav ul li a:hover{
 	background: #cec7d1 ;
 	overflow: visible;
 	padding: 18px 0;
+	/*-webkit-box-shadow: inset 1px 1px 5px 0px #232323;
+        	box-shadow: inset 1px 1px 5px 0px #232323; */
 }
-
-/* -----------------adding overflow:visible breaks the framework's floats--------------------
-.entry-points, .row{
-	overflow: visible;
-}
-*/
 
 .row .fourcol {
 	width: 30.74%;
@@ -321,7 +325,7 @@ nav ul li a:hover{
 
 .entry-points .fourcol{
 	text-align: center;
-	border-left: solid 1px #000;
+	border-left: solid 1px #959595;
 }
 
 .entry-points .fourcol:first-child{
@@ -343,7 +347,7 @@ nav ul li a:hover{
 }
 
 .entry-points p, .entry-points h2{
-	color: #fff;
+	color: #232323;
 	text-align: left;
 	margin: 6px 14.833833%; /* 52 from 350.55 */
 	width: 69.890173%; /* 245 from 350.55 */
@@ -360,7 +364,7 @@ nav ul li a:hover{
 
 
 .home-detail.container{
-	background: #fff;
+	background: #f4f4f4;
 	height: 792px;
 }
 
@@ -430,19 +434,21 @@ nav ul li a:hover{
 
 
 footer{
-	background: #000;
+	background: #232323;
 	height: 108px;
 }
 
+footer .sixcol{
+	text-align: center;
+}
+
 footer p{
-	color: #fff;
-	width: 39.473684%; /* 450 from 1140 */
-	margin: 30px auto 0;
+	color: #f4f4f4;
+	margin: 18px auto 0;
 }
 
 footer nav{
-	width: 900px; /* 450 from 1140 */
-	margin: 0 auto;
+	margin: 0 14%;
 }
 
 footer nav ul{
@@ -457,8 +463,9 @@ footer nav ul li{
 footer nav ul li a{
 	text-transform: uppercase;
 	text-align: center;
-	font-weight: 500;
-	color: #fff;
+	font-weight: 100;
+	color: #f4f4f4;
+	font-size: .6em;
 }
 
 footer nav ul li a:hover{
