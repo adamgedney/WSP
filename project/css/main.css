@@ -129,7 +129,9 @@ input{
 
 }
 
-
+.container{
+	padding: 0;
+}
 
 
 
@@ -154,51 +156,54 @@ input{
     *zoom: 1;
 }
 
+
 /*-------------------------------------- Start Buttons-------------------------------------------*/
 
 
 .button{
 	display: block;
-	width:288px;
-	height:72px;
-	background: #000;
-	color:#fff;
+	width:286px;
+	height:70px;
+	background: #5e4f77;
+	color:#f4f4f4;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 72px;
 	font-size: 2.1em;
+	border: 1px solid #473c5a;
 }
 
 .button:visited{
-	background: #red;
+	background: #473c5a;
 	color: #fff;
 }
 
 .button:hover{
-	background: none;
+	background: #473c5a;
 	color: #045B8C;
 	transition-duration: 1s
 }
 
 .button-small{
 	display: block;
-	width:241px;
-	height:72px;
-	background: #000;
-	color:#fff;
+	width:239px;
+	height:70px;
+	background: #5e4f77;
+	color:#f4f4f4;
 	text-transform: uppercase;
 	text-align: center;
 	line-height: 72px;
 	font-size: 1.8em;
+	border: 1px solid #473c5a;
 }
 
 .button-small:visited{
-	background: #red;
+	background: #473c5a;
 	color: #fff;
 }
 
 .button-small:hover{
-	background: none;
+	background: #473c5a;
 	color: #045B8C;
 	transition-duration: .8s
 }
@@ -268,6 +273,7 @@ nav ul li a:hover{
 			 -o-background-size: cover;
 				background-size: cover;
 	height: 864px;
+
 }
 
 .landing {
@@ -286,9 +292,8 @@ nav ul li a:hover{
 }
 
 .landing .button{
-	width: 288px; /* 25.263158% 288px from 1140px */
 	margin: 0 auto 108px;
-	opacity: .6;
+	opacity: .8;
 }
 
 
@@ -298,7 +303,7 @@ nav ul li a:hover{
 /*--------------------------------------End Landing/ Start Entry Points-------------------------------*/
 
 .entry-points.container{
-	background: url("../images/tree-hp.png") #5E6462 no-repeat 0 20px;
+	background: #cec7d1 ;
 	overflow: visible;
 	padding: 18px 0;
 }
@@ -317,7 +322,6 @@ nav ul li a:hover{
 .entry-points .fourcol{
 	text-align: center;
 	border-left: solid 1px #000;
-	margin-top: -60px;
 }
 
 .entry-points .fourcol:first-child{
