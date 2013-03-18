@@ -62,99 +62,101 @@ winslide.focus()
 
 </head>
 	<body>
+		<!-- Header -->
+		<header>
+			<div class="container">
+					<div class="row">
+								<div class="fivecol">
+									<a href="/WSP/project/index.html" title="Angelfire.com Free Websites, Domains, Email &amp; Hosting" ><h1>Build Your Free Website The Easy Way</h1></a>
+								</div><!-- closes .fivecol -->
+
+								<div class="sevencol last">
+									<nav>
+										<ul>
+											<li><a href="/WSP/project/website-builder.html" title="Angelfire.com Free Website Builder" >Website Builder</a></li>
+											<li><a href="/WSP/project/domain-names.html" title="Angelfire.com Register Domain Names" >Domain Names</a></li>
+											<li><a href="/WSP/project/email.html" title="Angelfire.com Free Email Accounts" >Email</a></li>
+											<li><a href="/WSP/project/hosting.html" title="Angelfire.com Buy A Hosting Account" >Hosting</a></li>
+											<li><a href="/WSP/project/contact.html" title="Angelfire.com Free Website Builder Contact Us" >Contact</a></li>
+										</ul>
+									</nav>
+								</div><!-- closes .sevencol -->
+					</div><!-- closes .row -->
+			</div><!-- closes .container -->
+		</header>
+
 		<div class="container">
-			<div class="row">
-				<div class="twelvecol" >
-					<header>
-						<a href="/WSP/project/index.html" title="Angelfire.com Free Websites, Domains, Email &amp; Hosting" ><h1>Build Your Free Website The Easy Way</h1></a>
-							<nav>
-							<ul>
-								<li><a href="/WSP/project/website-builder.html" title="Angelfire.com Free Website Builder" >Website Builder</a></li>
-								<li><a href="/WSP/project/domain-names.html" title="Angelfire.com Register Domain Names" >Domain Names</a></li>
-								<li><a href="/WSP/project/email.html" title="Angelfire.com Free Email Accounts" >Email</a></li>
-								<li><a href="/WSP/project/hosting.html" title="Angelfire.com Buy A Hosting Account" >Hosting</a></li>
-								<li><a href="/WSP/project/contact.html" title="Angelfire.com Free Website Builder Contact Us" >Contact</a></li>
-							</ul>
-							</nav>
-					</header>
-				</div><!-- closes .twelvecol -->
-			</div><!-- closes .row -->
+			<div id="page" >
+				<div class="row">
 
-		<div id="page" >
-			<div class="row">
-
-				<!-- Image/Sideshow Section -->
-				<div class="fourcol">
-					<section>
-						<!-- <img src="images/slider/slide4.png"  width="330" height="432" alt="Image of a happy business woman" /> -->
-
-						<!-- Slideshow -->
-						<div class="slider">
-							<a href="javascript:gotoshow()"><img src="images/slider/slide1.jpg" name="slide" border=0 width=330 height=432></a>
-							
-								<script>
-										<!--
-
-										//configure the paths of the images, plus corresponding target links
-										slideshowimages("images/slider/slide1.jpg","images/slider/slide2.jpg","images/slider/slide3.jpg","images/slider/slide4.png")
-										slideshowlinks("/WSP/project/website-builder.html","/WSP/project/domain-names.html","/WSP/project/email.html","/WSP/project/hosting.html")
-
-										//configure the speed of the slideshow, in miliseconds
-									var slideshowspeed=3000
-
-									var whichlink=0
-									var whichimage=0
-									function slideit(){
-									if (!document.images)
-									return
-									document.images.slide.src=slideimages[whichimage].src
-									whichlink=whichimage
-									if (whichimage<slideimages.length-1)
-									whichimage++
-									else
-									whichimage=0
-									setTimeout("slideit()",slideshowspeed)
-									}
-									slideit()
-
-									//-->
-								</script>
-						</div><!-- closes .slider -->
-
-						<!-- Live Person Prompt -->
-						<div class="image-sub" >
-							
-						</div><!-- closes .image-sub -->
-					</section>
-				</div><!-- closes .fourcol -->
-
-
-					<!-- Content Section -->
-					<div class="sixcol last detail-content">
+					<!-- Image/Sideshow Section -->
+					<div class="fourcol">
 						<section>
-							<h2 class="alt" ><strong>PERSONALIZE:</strong> WITH YOUR OWN EMAIL ADDRESS</h2>
-								<p><strong>Every Lycos domain</strong> automatically comes enabled with our powerful webmail platform. When you sign up for <a href="/WSP/project/website-builder.html" >THE Plan</a> you get 20 e-mail accounts, 1GB of storage per account, 20 e-mail forwards and our catch-all e-mail service.</p>
-								<blockquote>“It's amazing how simple Angelfire email is to use! I absolutely love it!“</blockquote>
-									<p>With Angelfire's easy-to-use webmail, you will be able to keep in touch with clients, stay close to friends, and truly enjoy sharing with your family.</p>
-							<a class="button" href="/WSP/project/website-builder.html" title="Angelfire.com Free Website Builder" >Let's Get Started</a>
-							
+
+							<!-- Slideshow -->
+							<div class="slider">
+								<a href="javascript:gotoshow()"><img src="images/slider/slide1.jpg" name="slide" border=0 width=330 height=432></a>
+								
+									<script>
+											<!--
+
+											//configure the paths of the images, plus corresponding target links
+											slideshowimages("images/slider/slide1.jpg","images/slider/slide2.jpg","images/slider/slide3.jpg","images/slider/slide4.png")
+											slideshowlinks("/WSP/project/website-builder.html","/WSP/project/domain-names.html","/WSP/project/email.html","/WSP/project/hosting.html")
+
+											//configure the speed of the slideshow, in miliseconds
+										var slideshowspeed=3000
+
+										var whichlink=0
+										var whichimage=0
+										function slideit(){
+										if (!document.images)
+										return
+										document.images.slide.src=slideimages[whichimage].src
+										whichlink=whichimage
+										if (whichimage<slideimages.length-1)
+										whichimage++
+										else
+										whichimage=0
+										setTimeout("slideit()",slideshowspeed)
+										}
+										slideit()
+
+										//-->
+									</script>
+							</div><!-- closes .slider -->
+
+							<!-- Live Person Prompt -->
+							<div class="image-sub" >
+								
+							</div><!-- closes .image-sub -->
 						</section>
-					</div><!-- closes .sixcol last detail-content -->
-			</div><!-- closes .row -->
+					</div><!-- closes .fourcol -->
+
+
+						<!-- Content Section -->
+						<div class="sixcol last detail-content">
+							<section>
+								<h2 class="alt" ><strong>PERSONALIZE:</strong> WITH YOUR OWN EMAIL ADDRESS</h2>
+									<p><strong>Every Lycos domain</strong> automatically comes enabled with our powerful webmail platform. When you sign up for <a href="/WSP/project/website-builder.html" >THE Plan</a> you get 20 e-mail accounts, 1GB of storage per account, 20 e-mail forwards and our catch-all e-mail service.</p>
+									<blockquote>“It's amazing how simple Angelfire email is to use! I absolutely love it!“</blockquote>
+										<p>With Angelfire's easy-to-use webmail, you will be able to keep in touch with clients, stay close to friends, and truly enjoy sharing with your family.</p>
+								<a class="button" href="/WSP/project/website-builder.html" title="Angelfire.com Free Website Builder" >Let's Get Started</a>
+								
+							</section>
+						</div><!-- closes .sixcol last detail-content -->
+				</div><!-- closes .row -->
+			</div><!-- closes #page -->
 		</div><!-- closes .container -->
 
-		</div><!-- closes #page -->
 			<!-- Footer -->
 			<footer>
 				<div class="container" >
-					<div class="row">	
-						<div class="twelvecol">
+					<div class="row">
+					<div class="threecol"></div><!-- closes .threecol -->	
+						<div class="sixcol">
 							<p>&copy; Copyright 2013 Angelfire.com. All Rights Reserved</p>
-						</div><!-- closes .twelvecol -->
-					</div><!-- closes .row -->	
-		
-						<div class="row">	
-							<div class="twelvecol">
+						
 								<nav>
 									<ul>
 										<li><a href="/WSP/project/website-builder.html" title="Angelfire.com Free Website Builder" >Website Builder</a></li>
@@ -164,7 +166,8 @@ winslide.focus()
 										<li><a href="/WSP/project/contact.html" title="Angelfire.com Free Website Builder Contact Us" >Contact</a></li>
 									</ul>
 								</nav>
-							</div><!-- closes .twelvecol -->
+							</div><!-- closes .sixcol -->
+							<div class="threecol last"></div><!-- closes .threecol -->
 						</div><!-- closes .row -->	
 				</div><!-- closes .container -->
 			</footer>

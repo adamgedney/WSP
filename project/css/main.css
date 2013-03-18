@@ -32,7 +32,7 @@ v2.0 | 20110126
 License: none (public domain)
 */
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 margin: 0;
 padding: 0;
@@ -65,10 +65,11 @@ body{
 
 h1{
 	font-family: 'Varela Round', sans-serif;
-	font-size: 3.8em;
-	line-height: 1.5em;
+	font-size: 4.5em;
+	line-height: 1.8em;
 	color: #000;
 	text-transform: uppercase;
+	text-shadow: 0 2px 0 #2E2E2F;
 }
 
 h2, h3, h4, h5{
@@ -77,10 +78,10 @@ h2, h3, h4, h5{
 }
 
 h2{
-	font-size: 2.6em;
+	font-size: 2.7em;
 	font-weight: 100;
 	line-height: 1.14em;
-	color: #000;
+	color: #232323;
 }
 
 h2.alt{
@@ -218,26 +219,33 @@ input{
 
 
 header{
-	height: 108px;
+	height: 54px;
 	width: 100%;
 	padding: 0 1.754386%; /* 20 from 1140 */
 	overflow: hidden;
+	background: #5e4f77;
+}
+
+.home-featured header{
+	background: none;
+	height: 72px;
+	padding-top: 18px;
 }
 
 header h1{
 	float: left;
 	display: inline-block;
 	background: url("../images/logo.png") no-repeat;
+	margin-top: -9px;
 	max-width: 100%;
-	height: 99px;
-	text-indent: 100%;
+	text-indent: 200%;
 	white-space: nowrap;
 	overflow: hidden;
 }
 
 header nav{
-	float: right;
-	margin-top: 54px;
+	float: left;
+	margin-top: 13px;
 }
 
 header nav ul{
@@ -252,7 +260,7 @@ header nav ul li{
 header nav ul li a{
 	text-transform: uppercase;
 	text-align: center;
-	font-weight: 500;
+	font-weight: 100;
 	color: #f4f4f4;
 }
 
@@ -261,17 +269,11 @@ header nav ul li a:hover{
 	transition-duration: .8s
 }
 
-/* .home-featured{
-	-webkit-box-shadow: inset 0px -4px 5px 0px #1A1915;
-        	box-shadow: inset 0px -4px 5px 0px #1A1915;
-}
-*/
-
 
 /*--------------------------------------End Header/ Start Landing-------------------------------*/
 
 .container.home-image{
-	background: url("../images/Woman_using_computer.jpg") no-repeat #fafafa center top;
+	background: url("../images/Woman_using_computer.jpg") no-repeat center top;
 		-webkit-background-size: cover;
 		   -moz-background-size: cover;
 			 -o-background-size: cover;
@@ -283,10 +285,11 @@ header nav ul li a:hover{
 .landing {
 	margin: 54px 10% 0;
 	text-align: center;
+	overflow: hidden;
 }
 
 .landing h1, .landing h2, .landing p{
-	color: #f4f4f4;
+	color: #d7dad3;
 }
 
 .landing h2{
@@ -300,20 +303,22 @@ header nav ul li a:hover{
 }
 
 .landing .button{
-	margin: 0 auto 108px;
+	margin: 0 auto;
 	opacity: .8;
 }
 
-
+#scroll-indicator{
+	float: right;
+}
 
 
 
 /*--------------------------------------End Landing/ Start Entry Points-------------------------------*/
 
 .entry-points.container{
-	background: #cec7d1 ;
+	background: #cec7d1 url("../images/entry-bg.jpg");
 	overflow: visible;
-	padding: 18px 0;
+	padding: 36px 0;
 	/*-webkit-box-shadow: inset 1px 1px 5px 0px #232323;
         	box-shadow: inset 1px 1px 5px 0px #232323; */
 }
@@ -326,6 +331,9 @@ header nav ul li a:hover{
 .entry-points .fourcol{
 	text-align: center;
 	border-left: solid 1px #959595;
+	margin: auto 0;
+	padding-right: 1.2%;
+	padding-left: 1.2%;
 }
 
 .entry-points .fourcol:first-child{
@@ -482,7 +490,14 @@ footer nav ul li a:hover{
 
 #page{
 	min-height: 912px;
-	padding-top: 196px;
+	padding-top: 108px;
+	background: #f4f4f4;
+}
+
+#page-short{
+	padding-top: 36px;
+	background: #f4f4f4;
+	margin-bottom: 216px;
 }
 
 .detail-content{
@@ -603,6 +618,75 @@ input.button-small{
 	float: left;
 	margin-left: 5px;
 }
+
+
+
+
+
+/*--------------------------------------Hosting Page-------------------------------*/
+
+.plans{
+
+}
+
+.row.cf.plans .twelvecol{
+	text-align: center;
+	margin-bottom: 108px;
+}
+
+.plan-title{
+	display: block;
+	width:286px;
+	height:70px;
+	background: #1f0f32;
+	margin: -80px auto 0;
+}
+
+.plan-title h2{
+	color: #f4f4f4;
+	font-weight: 700;
+	text-align: center;
+	line-height: 70px;
+}
+
+.plan-detail h3{
+	padding: 9px 0 9px 55px;
+	border-bottom: 1px solid #959595;
+	text-align: left;
+}
+
+.plan-detail h3:first-child{
+	line-height: 45px;
+	font-size: 4.5em;
+	margin-top: 18px;
+	text-align: center;
+}
+
+.plan-detail h3 small{
+	font-size: .4em;
+}
+
+.plan-detail h3 sup{
+	vertical-align: top;
+}
+
+img.featured-small{
+	margin-bottom: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

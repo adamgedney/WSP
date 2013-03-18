@@ -21,6 +21,15 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Varela+Round' rel='stylesheet' type='text/css'>
 
+	<!-- JQuery Library-->
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+	<script>
+	function goToByScroll(id){
+$('html,body').animate({scrollTop: $(id).offset().top},'slow');
+}
+	</script>
+
 </head>
 	<body>
 		<div class="container home-image" >
@@ -58,7 +67,13 @@
 											<p><strong>It doesn't matter if you're a beginner</strong> or a polished web designer, Angelfire's website builder gives you the tools to build a professional-looking website within minutes.</p>
 
 								<a class="button" href="/WSP/project/website-builder.html" title="Angelfire.com Free Website Builder" >Let's Get Started</a>
-
+									<a class="slow-jump" href="#info-jump" ><img id="scroll-indicator" src="images/info-arrow.png" width="125" height="125" alt="Scroll Down Indicator Image" /></a>
+									<script>$(document).ready(function(){
+									$('a.slow-jump').click(function(){
+									goToByScroll($(this).attr('href'));
+									return false;
+									});
+									});</script>
 						</section>
 					</div><!-- closes .twelvecol -->
 				</div><!-- closes .row -->
@@ -70,7 +85,7 @@
 			<div class="row cf">
 				<div class="fourcol">
 					<section>
-						<img src="images/domain-icon.png" width="280" height="108" alt="Get A Domain Name Icon" />
+						<img id="info-jump" src="images/domain-icon.png" width="280" height="108" alt="Get A Domain Name Icon" />
 							<a class="button-small" href="/WSP/project/website-builder.html" title="Angelfire.com Free Website Builder" >Get Your Domain Name</a>
 								<h2>Domain Names</h2>
 							<p>We have more than 10 years of domain management experience, which makes it a snap for you to buy and <a href="/WSP/project/domain-names.html" >manage your domain name</a> through us.</p>
