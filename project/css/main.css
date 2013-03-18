@@ -12,8 +12,11 @@
 
 /*==============COLORS=====================
 
-body bg
-p font
+     purple #5e4f77
+dark purple #473c5a
+	  white #f4f4f4
+  dark grey #232323
+ light grey #565658
 
 ==========================================*/
 
@@ -149,7 +152,7 @@ input{
     clear: both;
 }
 
-/**
+/*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
@@ -319,13 +322,10 @@ header nav ul li a:hover{
 	background: #cec7d1 url("../images/entry-bg.jpg");
 	overflow: visible;
 	padding: 36px 0;
-	/*-webkit-box-shadow: inset 1px 1px 5px 0px #232323;
-        	box-shadow: inset 1px 1px 5px 0px #232323; */
 }
 
 .row .fourcol {
 	width: 30.74%;
-	
 }
 
 .entry-points .fourcol{
@@ -525,8 +525,8 @@ footer nav ul li a:hover{
 
 .image-sub img{
 	display: block;
-	width: 196px;
-	height: 123px;
+	max-width: 102px;
+	max-height: 88px;
 	margin: 0 auto 21px;
 }
 
@@ -590,7 +590,11 @@ footer nav ul li a:hover{
 	text-align: right;
 }
 
-/*--------------------------------------DOmain Name Page-------------------------------*/
+
+
+
+
+/*--------------------------------------Domain Name Page-------------------------------*/
 
 form#domain{
 	overflow: hidden;
@@ -625,9 +629,6 @@ input.button-small{
 
 /*--------------------------------------Hosting Page-------------------------------*/
 
-.plans{
-
-}
 
 .row.cf.plans .twelvecol{
 	text-align: center;
@@ -636,21 +637,31 @@ input.button-small{
 
 .plan-title{
 	display: block;
-	width:286px;
-	height:70px;
+	width:180px;
+	height:55px;
 	background: #1f0f32;
-	margin: -80px auto 0;
+	margin: -70px auto 0;
+}
+
+.plan-title:after{
+	content: " ";
+    width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 15px 15px 0 15px;
+	border-color: #1F0F32 transparent transparent
 }
 
 .plan-title h2{
 	color: #f4f4f4;
-	font-weight: 700;
+	font-weight: 500;
 	text-align: center;
-	line-height: 70px;
+	line-height: 55px;
 }
 
 .plan-detail h3{
-	padding: 9px 0 9px 55px;
+	padding: 9px 0;
+	margin: 0 55px;
 	border-bottom: 1px solid #959595;
 	text-align: left;
 }
