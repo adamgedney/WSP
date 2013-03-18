@@ -660,10 +660,11 @@ input.button-small{
 }
 
 .plan-detail h3{
-	padding: 9px 0;
-	margin: 0 55px;
+	padding: 9px 5px;
+	margin: 0 50px;
 	border-bottom: 1px solid #959595;
 	text-align: left;
+	color: #565658;
 }
 
 .plan-detail h3:first-child{
@@ -671,6 +672,7 @@ input.button-small{
 	font-size: 4.5em;
 	margin-top: 18px;
 	text-align: center;
+	color: #232323;
 }
 
 .plan-detail h3 small{
