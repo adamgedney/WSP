@@ -128,9 +128,11 @@ blockquote{
 	margin: 36px 8.004803%; /* 36 from 449.73 (fivecol width) */
 }
 
-input{
+input, textarea, input[type="checkbox"]{
 	font-size: 1.8em;
 	color: #CECECE;
+	background: none;
+	border: 1px solid #CECECE;
 
 }
 
@@ -541,6 +543,10 @@ footer nav ul li a:hover{
 	width: 420px;
 }
 
+.input-label{
+	overflow: hidden;
+}
+
 .input-label label{
 	width: 70px;
 	float: left;
@@ -551,20 +557,26 @@ footer nav ul li a:hover{
 
 .input-label input, textarea{
 	width: 320px;
+	min-height: 40px;
 	float: right;
 	margin-bottom: 18px;
 }
 
 .input-label select{
 	width: 160px;
-	height: 18px;
+	height: 21px;
 	margin-left: 15px;
+	border-radius: 0;
+	background: none;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 }
 
 .input-label .button-small{
-	width: 100px;
+	width:189px;
+	height:60px;
 	float: right;
-	border: none;
+	
 }
 
 .checkbox{
@@ -583,11 +595,12 @@ footer nav ul li a:hover{
 	float: left;
 	text-align: left;
 	margin-left: 10px;
+	line-height: 2.4em;
 }
 
 .checkbox legend{
 	width: 70px;
-	margin-bottom: -33px;
+	margin-bottom: -55px;
 	line-height: .9em;
 	text-align: right;
 }
@@ -622,7 +635,7 @@ input#domain-search{
 	-moz-appearance: none;
 }
 
-.detail-content input.button-small{
+.detail-content input.domain-button-small{
 	width: 80px;
 	height: 40px;
 	line-height: 0;
