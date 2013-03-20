@@ -129,7 +129,7 @@ blockquote{
 }
 
 input{
-	font-size: 2.1em;
+	font-size: 1.8em;
 	color: #CECECE;
 
 }
@@ -185,7 +185,7 @@ input{
 
 .button:hover{
 	background: #473c5a;
-	color: #045B8C;
+	color: #f4f4f4;
 	transition-duration: 1s
 }
 
@@ -209,7 +209,7 @@ input{
 
 .button-small:hover{
 	background: #473c5a;
-	color: #045B8C;
+	color: #f4f4f4;
 	transition-duration: .8s
 }
 
@@ -274,6 +274,8 @@ header nav ul li a:hover{
 }
 
 
+
+
 /*--------------------------------------End Header/ Start Landing-------------------------------*/
 
 .container.home-image{
@@ -282,7 +284,7 @@ header nav ul li a:hover{
 		   -moz-background-size: cover;
 			 -o-background-size: cover;
 				background-size: cover;
-	height: 864px;
+	max-height: 864px;
 
 }
 
@@ -326,33 +328,31 @@ header nav ul li a:hover{
 }
 
 .row .fourcol {
-	width: 30.74%;
+	width: 29.65%;
 }
 
 .entry-points .fourcol{
 	text-align: center;
 	border-left: solid 1px #959595;
-	margin: auto 0;
+	margin: auto 1.2% auto 0;
 	padding-right: 1.2%;
 	padding-left: 1.2%;
+	min-height: 468px;
 }
 
 .entry-points .fourcol:first-child{
 	border-left: none;
 }
 
-.entry-points .fourcol:last-child p{
-	margin-bottom: 60px;
-}
-
 .entry-points .button-small{
-	width: 241px; /* 68.749109% 241 from 350.55(fourcol width) */
+	max-width: 241px; /* 68.749109% 241 from 350.55(fourcol width) */
 	margin: 36px auto 30px;
 }
 
 .entry-points img{
 	display: block;
 	margin: 0 auto;
+	min-height: 108px;
 }
 
 .entry-points p, .entry-points h2{
@@ -374,7 +374,6 @@ header nav ul li a:hover{
 
 .home-detail.container{
 	background: #f4f4f4;
-	height: 792px;
 }
 
 
@@ -433,6 +432,7 @@ header nav ul li a:hover{
 	float: right;
 	display: block;
 	margin-top: 18px;
+	margin-bottom: 18px;
 }
 
 
@@ -442,9 +442,9 @@ header nav ul li a:hover{
 /*--------------------------------------End / Start Footer-------------------------------*/
 
 
-footer{
+footer .container{
 	background: #232323;
-	height: 108px;
+	min-height: 108px;
 }
 
 footer .sixcol{
@@ -514,14 +514,18 @@ footer nav ul li a:hover{
 	margin-right: 65px;
 }
 
+
+/*------------------Slider---------------------*/
+
+
 .slider{
-	width: 330px;
-	height: 442px;
-	background: url("../images/shadow.png") no-repeat bottom center;
+	max-width: 330px;
+	max-height: 442px;
+	background: url("../images/shadow.png") no-repeat bottom center; /* why did this disappear when I defined a max width? */
 }
+
 .image-sub{
 	margin-top: 90px;
-
 }
 
 .image-sub img{
@@ -531,13 +535,10 @@ footer nav ul li a:hover{
 	margin: 0 auto 21px;
 }
 
-/*---------------------------------------*/
+/*------------------ Form ---------------------*/
 
 #contact-form{
 	width: 420px;
-}
-.input-label{
-	overflow: auto;
 }
 
 .input-label label{
@@ -605,21 +606,26 @@ form#domain{
 form#domain select{
 	float:left;
 	width: 80px;
-	height: 41px;
+	height: 40px;
 	border: solid 1px #000;
-	font-size: 2.1em;
+	font-size: 1.8em;
 	margin-left: 5px;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
 }
 
 input#domain-search{
-	width: 351px;
-	height: 34px;
+	width: 300px;
+	height: 40px;
 	float: left;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 
-input.button-small{
+.detail-content input.button-small{
 	width: 80px;
 	height: 40px;
+	line-height: 0;
 	float: left;
 	margin-left: 5px;
 }
@@ -692,7 +698,88 @@ img.featured-small{
 
 
 
+/*--------------------------------------Home full to tablet-------------------------------*/
 
+
+@media only screen and (max-width: 1077px) {
+
+header .fivecol{
+	margin-right: 0;
+}
+
+header .sevencol .last{
+	max-width: 90%;
+}
+header nav ul li{
+	font-size: .7em;
+	padding: 5px;
+}
+
+h1{
+	font-size: 2.7em;
+}
+
+h2{
+	font-size: 2em;
+}
+
+p{
+	font-size: 1.6em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.landing {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.button, .home-detail-content .button{
+	width:216px;
+	height:60px;
+	line-height: 62px;
+	font-size: 1.4em;
+}
+
+.button-small{
+	width:189px;
+	height:60px;
+	line-height: 62px;
+	font-size: 1.4em;
+	overflow: wrap;
+}
+
+.slider, .static-img{
+	margin-left: 20px;
+}
+
+input#domain-search{
+	width: 200px;
+}
+
+input{
+	font-size: 1.3em;
+}
+
+footer p, blockquote{
+	font-size: 1.3em;
+}
+
+footer nav ul li{
+	font-size: .8em;
+	padding: 3px;
+}
+
+/*------------------ Contact Form ---------------------*/
+
+.image-sub{
+	margin-left: 20px;
+}
+
+
+
+
+}
 
 
 
