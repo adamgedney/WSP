@@ -199,7 +199,7 @@ input, textarea, input[type="checkbox"]{
 	color:#f4f4f4;
 	text-transform: uppercase;
 	text-align: center;
-	line-height: 72px;
+	line-height: 70px;
 	font-size: 1.8em;
 	border: 1px solid #473c5a;
 }
@@ -395,11 +395,11 @@ header nav ul li a:hover{
 .thumbnail-grid img:first-child{
 	margin-left: 48.245614%; /* 264 from 547.2 */
 	margin-right: 24.122807%; /* 132 from 547.2 */
+	opacity: 1;
 }
 
 .thumbnail-grid img:nth-child(4){
 	margin-right: 24.122807%; /* 132 from 547.2 */
-	opacity: 1;
 }
 
 .thumbnail-grid img:nth-child(5){
@@ -468,7 +468,7 @@ footer nav ul{
 
 footer nav ul li{   
 	float: left;
-	padding: 5px 10px; /* not sure where to get the context width from? */
+	padding: 5px 8px; /* not sure where to get the context width from? */
 }
 
 footer nav ul li a{
@@ -523,7 +523,6 @@ footer nav ul li a:hover{
 .slider{
 	max-width: 330px;
 	max-height: 442px;
-	background: url("../images/shadow.png") no-repeat bottom center; /* why did this disappear when I defined a max width? */
 }
 
 .image-sub{
@@ -572,13 +571,6 @@ footer nav ul li a:hover{
 	-moz-box-sizing: content-box;
 }
 
-.input-label .button-small{
-	width:189px;
-	height:60px;
-	float: right;
-	
-}
-
 .checkbox{
 	margin: 18px 0;
 }
@@ -595,17 +587,31 @@ footer nav ul li a:hover{
 	float: left;
 	text-align: left;
 	margin-left: 10px;
-	line-height: 2.4em;
+	margin-top: 6px;
+	
 }
 
 .checkbox legend{
 	width: 70px;
+	float: left;
 	margin-bottom: -55px;
 	line-height: .9em;
 	text-align: right;
 }
 
+.captcha{ /* -----------------------------Problems adding captcha --------------------------------------------------------------*/
+	width: 320px;
+	float: right;
+	clear: left;
+	display: none;
+}
 
+.input-label .button-small{
+	width:189px;
+	height:60px;
+	line-height: 60px;
+	float: right;
+}
 
 
 
