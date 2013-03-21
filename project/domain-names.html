@@ -22,44 +22,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700|Varela+Round' rel='stylesheet' type='text/css'>
 
 
-
-<script language="JavaScript1.1">
-<!--
-
-/*
-JavaScript Image slideshow:
-By JavaScript Kit (www.javascriptkit.com)
-Over 200+ free JavaScript here!
-*/
-
-var slideimages=new Array()
-var slidelinks=new Array()
-function slideshowimages(){
-for (i=0;i<slideshowimages.arguments.length;i++){
-slideimages[i]=new Image()
-slideimages[i].src=slideshowimages.arguments[i]
-}
-}
-
-function slideshowlinks(){
-for (i=0;i<slideshowlinks.arguments.length;i++)
-slidelinks[i]=slideshowlinks.arguments[i]
-}
-
-function gotoshow(){
-if (!window.winslide||winslide.closed)
-winslide=window.open(slidelinks[whichlink])
-else
-winslide.location=slidelinks[whichlink]
-winslide.focus()
-}
-
-//-->
-</script>
-
-
-
-
 </head>
 	<body>
 		<!-- Header -->
@@ -97,35 +59,7 @@ winslide.focus()
 
 						<!-- Slideshow -->
 						<div class="slider">
-							<a href="javascript:gotoshow()"><img src="images/slider/slide1.png" name="slide" border=0 width=330 height=432></a>
-							
-								<script>
-										<!--
-
-										//configure the paths of the images, plus corresponding target links
-										slideshowimages("images/slider/slide1.png","images/slider/slide2.png","images/slider/slide3.png","images/slider/slide4.png")
-										slideshowlinks("/WSP/project/website-builder.html","/WSP/project/domain-names.html","/WSP/project/email.html","/WSP/project/hosting.html")
-
-										//configure the speed of the slideshow, in miliseconds
-									var slideshowspeed=3000
-
-									var whichlink=0
-									var whichimage=0
-									function slideit(){
-									if (!document.images)
-									return
-									document.images.slide.src=slideimages[whichimage].src
-									whichlink=whichimage
-									if (whichimage<slideimages.length-1)
-									whichimage++
-									else
-									whichimage=0
-									setTimeout("slideit()",slideshowspeed)
-									}
-									slideit()
-
-									//-->
-								</script>
+							<img class="featured-small" src="images/tree-hp.png" width="330"  height="432" alt="Image of two people working under a tree" />
 						</div><!-- /.slider -->
 
 						<!-- Live Person Prompt -->
@@ -139,6 +73,7 @@ winslide.focus()
 					<!-- Content Section -->
 					<div class="sixcol last detail-content">
 						<section>
+							<img src="images/hosting-icon.png" width="88" height="88" alt="Hosting Icon" id="page-icon" class="slide" />
 							<h2 class="alt" ><strong>PERSONALIZE YOUR WEBSITE:</strong> WITH YOUR OWN DOMAIN NAME</h2>
 								<form id="domain">
 									<input id="domain-search" type="search" name="domain_search" placeholder="SEARCH FOR YOUR DOMAIN" autofocus="autofocus"/>
@@ -214,11 +149,11 @@ winslide.focus()
 										     <option>.vg</option>
 										     <option>.xxx</option>
 										</select>
-										<input type="submit" value="Search" class="domain-button-small" />
+										<input type="submit" value="Search" class="button-small domain-button-small" />
 								</form>
 									<p><strong>We have more</strong> than 10 years of domain management experience, which makes it a snap for you to buy and <a href="/WSP/project/website-builder.html" >manage your domain name</a> through us.</p>
 										<blockquote>“I took my business to the next level by getting my own domain name through Angelfire.com!“</blockquote>
-											<p>Your domain comes with a tools to protect your personal info, a generous number of subdomains, domain forwarding, domain transfers for domains you already own and auto-renewal for your domains. </p>
+											<p>Your domain comes with tools to protect your personal info, a generous number of subdomains, domain forwarding, domain transfers for domains you already own and auto-renewal for your domains. </p>
 						</section>
 					</div><!-- /.sixcol last detail-content -->
 			</div><!-- /.row -->
