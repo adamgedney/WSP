@@ -613,7 +613,6 @@ header nav ul li a:hover{
 			 -o-background-size: cover;
 				background-size: cover;
 	max-height: 864px;
-
 }
 
 .landing {
@@ -960,14 +959,10 @@ form#domain{
 	height: 48px;
 	padding: 2px;
 	margin-bottom: 18px;
-	border: 1px solid #565658;
-			border-radius: 5px;
-	   -moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
 }
 
 input#domain-search{
-	width: 300px;
+	max-width: 342px;
 	min-height: 44px;
 	float: left;
 	-webkit-appearance: none;
@@ -1003,7 +998,11 @@ form#domain select{
 	-webkit-border-radius: 5px;
 }
 
-
+@media only screen and (max-width: 1077px) {
+.detail-content input.domain-button-small{
+	width: 64px;
+}
+}
 
 
 
@@ -1071,7 +1070,7 @@ img.featured-small{
 
 
 
-/*--------------------------------------Home full to tablet-------------------------------*/
+/*--------------------------------------@media full to tablet-------------------------------*/
 
 
 @media only screen and (max-width: 1077px) {
@@ -1127,11 +1126,11 @@ p{
 }
 
 input#domain-search{
-	width: 200px;
+	width: 190px;
 }
 
-input{
-	font-size: 1.3em;
+input#domain-search, form#domain select{
+	font-size: 1.2em;
 }
 
 footer p, blockquote{
@@ -1150,14 +1149,291 @@ footer nav ul li{
 }
 
 
+} /*---/query---*/
 
 
+/*--------------------------------------@media tablet to mobile-------------------------------*/
+
+
+@media only screen and (max-width: 803px) {
+
+.row{
+	min-width: 350px;
+}
+
+.container.home-image{
+	max-height: 975px;
+}
+
+#scroll-indicator{
+	display: none;
+}
+
+.row .fivecol{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.row .sevencol{
+	width: 100%;
+	margin: 0 auto;
+}
+
+header .sevencol .last{
+	max-width: 90%;
+}
+
+header{
+	height: 104px;
+	overflow: visible;
+}
+
+header h1{
+	float: none;
+	max-width: 217px;
+	margin: 0 auto;
+	display: block;
+}
+
+header nav{
+	float: none;
+	margin: 0;
+}
+
+header nav ul{
+	width: 360px;
+	margin: 18px auto;
+	font-size: 1.6em;
+}
+
+.landing p{
+	width: 90%;
+	margin: 18px 5%;
+	line-height: 1.5em;
+}
+
+.landing a.button{
+	margin-bottom: 54px;
+}
+
+.landing h1{
+	font-size: 4em;
+	line-height: 1em;
+	margin-bottom: 36px;
+}
+
+h2{
+	font-size: 2.7em;
+}
+
+footer .threecol{
+	display: none;
+}
+
+footer .row .sixcol{
+	width: 80%;
+	margin: 5% 10%;
+}
+
+footer nav{
+	width: 360px;
+	margin: 0 auto;
+}
+
+footer nav ul{
+	font-size: 2.4em;
+	line-height: 0;
+}
+#page .fourcol{
+	display: none;
+}
+
+#page .sixcol, .entry-points .fourcol{
+	float: none;
+	width: 82.7%;
+	margin: 0 auto;
+	border-left: none;
+	border-bottom: solid 1px #959595;
+}
+
+.entry-points .fourcol{
+	margin: 18px auto;
+	min-height: 300px;
+}
+
+.entry-points .fourcol h2{
+	text-align: center;
+}
+
+.entry-points .fourcol p{
+	text-align: center;
+	padding-bottom: 18px;
+}
+
+.entry-points .fourcol:last-child{
+	border-bottom: none;
+}
+
+.thumbnail-grid {
+    display: none;
+}
+
+.fivecol.home-detail-content{
+	width: 80%;
+	padding: 54px;
+}
+
+#page-icon{
+	display: none;
+}
+
+input#domain-search{
+	width: 342px;
+}
+
+input#domain-search, form#domain select{
+	font-size: 1.8em;
+}
+
+.detail-content input.domain-button-small{
+	width: 80px;
 }
 
 
+} /*---/query---*/
 
 
+/*--------------------------------------@media mobile-------------------------------*/
 
+
+@media only screen and (max-width: 400px) {
+
+header{
+	height: 72px;
+}
+
+header h1{
+	padding-bottom: 10px;
+}
+
+header nav{
+	display: none;
+}
+
+.landing{
+	margin-top: 18px;
+}
+
+.home-detail-content .button{
+	float: none;
+	margin: 0 auto;
+}
+
+footer .container{
+	min-height: 65px;
+	margin: 0;
+	padding: 9px;
+}
+
+footer .row .sixcol{
+	width: 100%;
+	margin: 0 8%;
+}
+
+footer p{
+	display: none;
+}
+
+footer nav ul{
+}
+
+footer nav ul li{
+	height: 57px;
+	width: 54px;
+	border-right: solid 1px #959595;
+	padding: 5px;
+}
+
+footer nav ul li:last-child{
+	border-right: none;
+}
+
+footer nav ul li a{
+	display: block;
+	line-height: 9px;
+	font-size: .4em;
+	margin-top: 45px;
+}
+
+footer nav ul li:nth-child(1){
+	background: url("../images/builder-icon-white.png") no-repeat center 5px;
+}
+
+footer nav ul li:nth-child(1):hover{
+	opacity: .3;
+}
+
+footer nav ul li:nth-child(2){
+	background: url("../images/domain-icon-white.png") no-repeat center 5px;
+}
+
+footer nav ul li:nth-child(2):hover{
+	opacity: .3;
+}
+
+footer nav ul li:nth-child(3){
+	background: url("../images/mail-icon-white.png") no-repeat center 5px;
+}
+
+footer nav ul li:nth-child(3):hover{
+	opacity: .3;
+}
+
+footer nav ul li:nth-child(4){
+	background: url("../images/hosting-icon-white.png") no-repeat center 5px;
+}
+
+footer nav ul li:nth-child(4):hover{
+	opacity: .3;
+}
+
+footer nav ul li:nth-child(5){
+	background: url("../images/info-icon-white.png") no-repeat center 5px;
+}
+
+footer nav ul li:nth-child(5):hover{
+	opacity: .3;
+}
+
+.detail-content h2{
+	font-size: 2.1em;
+}
+/*------------------contact form---------------------*/
+
+.input-label input[type="text"], .input-label input[type="email"], .input-label label, textarea, select{
+	float: none;
+}
+
+.input-label label[for="first_name"], .input-label label[for="email"], .input-label label[for="state"]{
+	display: none;
+}
+
+#page .sixcol, .entry-points .fourcol{
+	border-bottom: none;
+}
+
+.required{
+	float: none;
+	margin: 0;
+}
+
+.input-label .button-small{
+	float: none;
+	width: 320px;
+	margin: 0;
+}
+
+} /*---/query---*/
 
 
 
