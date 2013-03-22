@@ -74,7 +74,7 @@ h1{
 	font-size: 4.5em;
 	line-height: 1.8em;
 	color: #000;
-	text-transform: uppercase;
+	
 	text-shadow: 0 2px 0 #473c5a;
 }
 
@@ -514,6 +514,7 @@ animation: slide 4s forwards linear;
 .button:hover{
 	background: #473c5a;
 	color: #f4f4f4;
+	-webkit-transition-duration: 1s
 	transition-duration: 1s
 }
 
@@ -538,7 +539,8 @@ animation: slide 4s forwards linear;
 .button-small:hover{
 	background: #473c5a;
 	color: #f4f4f4;
-	transition-duration: .8s
+	-webkit-transition-duration: 1s
+	transition-duration: 1s
 }
 
 
