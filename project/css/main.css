@@ -608,7 +608,7 @@ header nav ul li a:hover{
 /*--------------------------------------End Header/ Start Landing-------------------------------*/
 
 .container.home-image{
-	background: url("../images/woman_using_computer.jpg") no-repeat center top;
+	background: url("../images/home-bg.jpg") no-repeat center top;
 		-webkit-background-size: cover;
 		   -moz-background-size: cover;
 			 -o-background-size: cover;
