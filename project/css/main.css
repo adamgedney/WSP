@@ -17,6 +17,7 @@
  	   white #f4f4f4
    dark grey #232323
   light grey #565658
+  darkest purple #1f0f32
 
 light purple background: #cec7d1 url("../images/entry-bg.jpg");
 ==========================================*/
@@ -1193,6 +1194,7 @@ header h1{
 	max-width: 217px;
 	margin: 0 auto;
 	display: block;
+	padding-bottom: 9px;
 }
 
 header nav{
@@ -1202,7 +1204,7 @@ header nav{
 
 header nav ul{
 	width: 360px;
-	margin: 18px auto;
+	margin: 9px auto;
 	font-size: 1.6em;
 }
 
@@ -1243,7 +1245,9 @@ footer nav{
 footer nav ul{
 	font-size: 2.4em;
 	line-height: 0;
+	padding-bottom: 18px;
 }
+
 #page .fourcol{
 	display: none;
 }
@@ -1299,6 +1303,30 @@ input#domain-search, form#domain select{
 	width: 80px;
 }
 
+/*------------------ Hosting Page ---------------------*/
+
+#page-short p{
+	width: 82%;
+	margin-top: 18px;
+}
+
+.plan-title{
+	margin-top: 36px;
+	width: 100%;
+	background: rgba(31, 15, 50, .1);
+}
+
+.plan-title h2{
+	color: #232323;
+}
+
+.plan-detail h3{
+	text-align: center;
+}
+
+
+
+
 
 } /*---/query---*/
 
@@ -1306,7 +1334,7 @@ input#domain-search, form#domain select{
 /*--------------------------------------@media mobile-------------------------------*/
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 
 header{
 	height: 72px;
@@ -1418,10 +1446,6 @@ footer nav ul li:nth-child(5):hover{
 	display: none;
 }
 
-#page .sixcol, .entry-points .fourcol{
-	border-bottom: none;
-}
-
 .required{
 	float: none;
 	margin: 0;
@@ -1433,6 +1457,13 @@ footer nav ul li:nth-child(5):hover{
 	margin: 0;
 }
 
+
+/*------------------ Hosting Page ---------------------*/
+
+
+.featured-small{
+	max-width: 300px;
+}
 } /*---/query---*/
 
 
