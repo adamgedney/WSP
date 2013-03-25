@@ -18,6 +18,7 @@
    dark grey #232323
   light grey #565658
   darkest purple #1f0f32
+  nav line purple #3f3550
   yellow     #F2D275
   red        #BE3426
 
@@ -256,7 +257,7 @@ header nav ul{
 header nav ul li{   
 	float: left;
 	padding: 5px 10px; /* not sure where to get the context width from? */
-	border-right: solid 1px #232323;
+	border-right: solid 1px #3f3550;
 }
 
 header nav ul li:last-child{
@@ -888,6 +889,20 @@ header nav ul{
 	margin: 9px auto;
 }
 
+		@media only screen and (max-width: 475px) {
+			
+			header nav ul{
+				width: 320px;
+			}
+
+			header nav ul li{
+				font-size: .5em;
+				height: 20px;
+				border-right: none;
+			}
+
+		}/* /query */
+
 .landing p{
 	width: 90%;
 	margin: 18px 5%;
@@ -1079,7 +1094,7 @@ footer nav ul{
 footer nav ul li{
 	float: left;
 	height: 57px;
-	width: 55px;
+	width: 45px;
 	border-right: solid 1px #474747;
 	padding:8px 8px 0;
 }
