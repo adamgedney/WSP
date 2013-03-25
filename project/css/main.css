@@ -643,7 +643,7 @@ form#domain{
 }
 
 input#domain-search{
-	width: 342px;
+	width: 332px;
 	height: 42px;
 	float: left;
 	border: none;
@@ -805,7 +805,7 @@ p{
 }
 
 input#domain-search{
-	width: 190px;
+	width: 290px;
 }
 
 input#domain-search, form#domain select{
@@ -982,12 +982,14 @@ footer nav ul{
 	display: none;
 }
 
+/*------------------ Domain Name Page ---------------------*/
+
 input#domain-search{
-	width: 200px;
+	width: 400px;
 }
 
 form#domain select{
-	float: right;
+	float: left;
 }
 
 input#domain-search, form#domain select{
@@ -1000,6 +1002,7 @@ input#domain-search, form#domain select{
 }
 
 /*------------------ Hosting Page ---------------------*/
+
 
 #page-short p{
 	width: 82%;
