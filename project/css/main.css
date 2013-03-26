@@ -67,9 +67,9 @@ list-style: none;
 
 
 body{
+	background: #f4f4f4;
 	color: #424242;
 	font: 62.5% 'Open Sans', 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
-	min-height: 100%;
 }
 
 h1{
@@ -223,9 +223,9 @@ input[type="text"], input[type="email"], input#domain-search, textarea, select{
 header{
 	height: 54px;
 	width: 100%;
-	padding: 0 1.754386%; /* 20 from 1140 */
 	overflow: hidden;
 	background: #5e4f77;
+	margin-bottom: 108px;
 }
 
 .home-featured header{
@@ -315,7 +315,7 @@ header nav ul li a:hover, a.current {
 .landing .button{
 	margin: 0 auto;
 	color: #fff;
-	opacity: .6;
+	opacity: .9;
 }
 
 #scroll-indicator{
@@ -446,7 +446,7 @@ header nav ul li a:hover, a.current {
 /*--------------------------------------End / Start Footer-------------------------------*/
 
 
-footer .container{
+footer{
 	background: #232323;
 	min-height: 108px;
 }
@@ -494,15 +494,12 @@ footer nav ul li a:hover{
 
 
 #page{
-	min-height: 912px;
-	padding-top: 108px;
-	background: #f4f4f4;
+	width: 100%;
 }
 
 #page-short{
-	padding-top: 36px;
-	background: #f4f4f4;
-	margin-bottom: 216px;
+	min-height: 608px;
+	/* margin-bottom: 216px; */
 }
 
 #page-icon{
@@ -931,7 +928,7 @@ footer nav{
 footer nav ul{
 	font-size: 1.8em;
 	line-height: 0;
-	padding-bottom: 18px;
+	padding-bottom: 3px;
 }
 
 #page .fourcol{
@@ -1096,6 +1093,7 @@ footer nav ul{
 	overflow: hidden;
 	width: 98%;
 	margin: 0 1%;
+	padding-bottom: 0;
 }
 
 footer nav ul li{
