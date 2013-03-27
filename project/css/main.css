@@ -695,6 +695,11 @@ form.single-line-form-wrapper{
 	margin-bottom: 108px;
 }
 
+.plans h2 + p{
+	width: 82%;
+	margin: 0 auto;
+}
+
 .plan-title{
 	display: block;
 	width:180px;
@@ -941,13 +946,19 @@ footer nav ul{
 	padding-bottom: 3px;
 }
 
-#page .fourcol, .fourcol.domain-names-page{
+#page .row .fourcol, .fourcol.domain-names-page{
 	float: none;
 	margin: 0 auto;
 	clear: both;
 	width: 66%;
 	opacity: .2;
 	position: absolute;
+}
+
+#page .row .fourcol.retain-image{
+	opacity: 1;
+	position: static;
+	max-width: 100%;
 }
 
 #page .sixcol, .entry-points .fourcol{
@@ -1014,10 +1025,6 @@ input#domain-search, section#domain select, .detail-content input.domain-button-
 	margin-top: 18px;
 }
 
-.plans .fourcol{
-	
-}
-
 .plan-title{
 	margin-top: 36px;
 	width: 100%;
@@ -1063,6 +1070,9 @@ input#domain-search, section#domain select, .detail-content input.domain-button-
 
 @media only screen and (max-width: 320px) {
 
+p{
+	font-size: 1.3em!important;
+}
 
 header{
 	height: 72px;
