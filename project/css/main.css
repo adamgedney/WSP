@@ -449,6 +449,7 @@ header nav ul li a:hover, a.current {
 footer{
 	background: #232323;
 	min-height: 108px;
+	margin-top: 108px;
 }
 
 footer .sixcol{
@@ -495,11 +496,6 @@ footer nav ul li a:hover{
 
 #page{
 	width: 100%;
-}
-
-#page-short{
-	min-height: 608px;
-	/* margin-bottom: 216px; */
 }
 
 #page-icon{
@@ -701,7 +697,7 @@ form#domain select{
 	margin: -70px auto 0;
 }
 
-.plan-title:after{
+.plan-title:after{ /* Triangles not functioning in Chrome */
 	content: " ";
     width: 0px;
 	height: 0px;
