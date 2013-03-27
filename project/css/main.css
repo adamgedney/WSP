@@ -1014,6 +1014,10 @@ input#domain-search, section#domain select, .detail-content input.domain-button-
 	margin-top: 18px;
 }
 
+.plans .fourcol{
+	
+}
+
 .plan-title{
 	margin-top: 36px;
 	width: 100%;
@@ -1059,8 +1063,13 @@ input#domain-search, section#domain select, .detail-content input.domain-button-
 
 @media only screen and (max-width: 320px) {
 
+
 header{
 	height: 72px;
+	margin-bottom: 72px;
+}
+
+header .row .fivecol{
 }
 
 header h1{
@@ -1084,11 +1093,11 @@ header nav{
 	margin: 0 auto;
 }
 
-footer .container{
+footer{
 	min-height: 65px;
 }
 
-footer .container .row.footer .sixcol{
+footer .row.footer .sixcol{
 	padding: 0;
 	margin: 0;
 }
@@ -1097,10 +1106,14 @@ footer p{
 	display: none;
 }
 
+footer nav{
+	width: 320px;
+}
+
 footer nav ul{
 	overflow: hidden;
 	width: 98%;
-	margin: 0 1%;
+	margin: 0;
 	padding-bottom: 0;
 }
 
@@ -1157,10 +1170,30 @@ footer nav ul li:nth-child(1):hover, footer nav ul li:nth-child(2):hover, footer
 #page .fourcol{
 	display: none;
 }
+
+.sixcol.detail-content{
+	width: 90%;
+	margin-right: 0;
+}
+
+.detail-content h2{
+	font-size: 1.6em;
+}
 /*------------------contact form---------------------*/
 
-.input-label input[type="text"], .input-label input[type="email"], .input-label label, textarea, select{
+form#contact-form{
+	width: 250px;
+	padding-right: 0;
+}
+
+.input-label label, legend{
+	font-size: 1.2em;
+	line-height: 2.5;
+}
+.input-label input[type="text"], .input-label input[type="email"], .input-label label, .input-label textarea, .input-label select{
 	float: none;
+	width: 90%;
+	font-size: 1.3em;
 }
 
 .input-label label[for="first_name"], .input-label label[for="email"], .input-label label[for="state"]{
@@ -1174,8 +1207,8 @@ footer nav ul li:nth-child(1):hover, footer nav ul li:nth-child(2):hover, footer
 
 .input-label .button-small{
 	float: none;
-	width: 320px;
-	margin: 0;
+	width: 220px;
+	margin: 0 auto;
 }
 
 
