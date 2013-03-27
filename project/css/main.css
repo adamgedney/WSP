@@ -556,7 +556,7 @@ footer nav ul li a:hover{
 	line-height: .8em;
 }
 
-.input-label input[type="text"], .input-label input[type="email"], textarea, select{
+.input-label input[type="text"], .input-label input[type="email"], textarea, .input-label select{
 	width: 320px;
 	min-height: 40px;
 	float: right;
@@ -625,32 +625,32 @@ footer nav ul li a:hover{
 
 /*--------------------------------------Domain Name Page-------------------------------*/
 
-form#domain{
+form.single-line-form-wrapper{
 	overflow: hidden;
-	height: 40px;
+}
+
+section#domain{
+	height: 36px;
+	width: 80%;
 	margin-bottom: 18px;
 	border: solid 1px #232323;
-			border-top-left-radius: 5px;
-	   -moz-border-top-left-radius: 5px;
-	-webkit-border-top-left-radius: 5px;
+	float: left;
+
 }
 
 input#domain-search{
-	width: 332px;
-	height: 42px;
-	float: left;
+	height: 36px;
 	border: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	outline: none;
 }
 
-form#domain select{
-	float: left;
-	width: 80px;
+section#domain select{
+	float: right;
+	min-width: 28%;
 	height: 36px;
 	font-size: 1.8em;
-	margin-left: 5px;
 	border: none;
 	border-left: solid 1px #232323;
 	-webkit-border-radius: 0;
@@ -667,18 +667,24 @@ form#domain select{
 }
 
 .detail-content input.domain-button-small{
-	width: 80px;
-	height: 43px;
+	float: left;
+	width: 18%;
+	height: 38px;
 	line-height: 0;
-	float: right;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 1077px) {
 .detail-content input.domain-button-small{
 	width: 64px;
 }
-}
+}/* / query */
 
+@media only screen and (max-width: 410px){
+form.single-line-form-wrapper{
+	width: 104%;
+}
+}/* / query */
 
 
 /*--------------------------------------Hosting Page-------------------------------*/
@@ -745,6 +751,22 @@ img.featured-small{
 
 
 
+/*
+
+
+Begin Media Querys
+
+@
+
+
+*/
+
+
+
+
+
+
+
 /*--------------------------------------@media full to tablet-------------------------------*/
 
 
@@ -797,11 +819,7 @@ p{
 	margin-left: 20px;
 }
 
-input#domain-search{
-	width: 290px;
-}
-
-input#domain-search, form#domain select{
+input#domain-search, section#domain select{
 	font-size: 1.2em;
 }
 
@@ -903,10 +921,6 @@ h1{
 	font-size: 2.7em;
 }
 
-h2{
-	font-size: 2.7em;
-}
-
 footer .threecol{
 	display: none;
 }
@@ -927,7 +941,7 @@ footer nav ul{
 	padding-bottom: 3px;
 }
 
-#page .fourcol{
+#page .fourcol, .fourcol.domain-names-page{
 	float: none;
 	margin: 0 auto;
 	clear: both;
@@ -971,28 +985,26 @@ footer nav ul{
 	padding: 54px;
 }
 
+.sixcol.detail-content{
+	width: 80%;
+}
+
 #page-icon{
 	display: none;
 }
 
+.image-sub{
+	display: none;
+}
+
+
 /*------------------ Domain Name Page ---------------------*/
 
-input#domain-search{
-	width: 400px;
+
+input#domain-search, section#domain select, .detail-content input.domain-button-small{
+	font-size: 1.2em;
 }
 
-form#domain select{
-	float: left;
-}
-
-input#domain-search, form#domain select{
-	font-size: 1.6em;
-}
-
-.detail-content input.domain-button-small{
-	width: 80px;
-	float: right;
-}
 
 /*------------------ Hosting Page ---------------------*/
 
@@ -1176,17 +1188,9 @@ footer nav ul li:nth-child(1):hover, footer nav ul li:nth-child(2):hover, footer
 
 /*------------------ Domain Name Page ---------------------*/
 
-input#domain-search{
-	width: 165px;
-}
 
-input#domain-search, form#domain select{
+input#domain-search, section#domain select{
 	font-size: 1.6em;
-}
-
-
-.detail-content input.domain-button-small{
-	width: 80px;
 }
 
 
