@@ -836,7 +836,7 @@ footer p, blockquote{
 }
 
 footer nav ul{
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 }
 
@@ -931,7 +931,6 @@ footer .threecol{
 
 footer .row .sixcol{
 	width: 100%;
-	margin: 5% 10%;
 }
 
 footer nav{
@@ -943,6 +942,7 @@ footer nav ul{
 	font-size: 1.8em;
 	line-height: 0;
 	padding-bottom: 3px;
+	width: 85%;
 }
 
 #page .row .fourcol, .fourcol.domain-names-page{
