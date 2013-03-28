@@ -154,6 +154,9 @@ input[type="text"], input[type="email"], input#domain-search, textarea, select{
 	padding: 0;
 }
 
+.row{
+	min-width: 0;
+}
 
 /*--------------------------------------Micro Clearfix--------------------------------------------*/
 
@@ -690,7 +693,7 @@ form.single-line-form-wrapper{
 /*--------------------------------------Hosting Page-------------------------------*/
 
 
-.row.cf.plans .twelvecol{
+.plans .twelvecol{
 	text-align: center;
 	margin-bottom: 108px;
 }
@@ -777,9 +780,9 @@ Begin Media Querys
 
 @media only screen and (max-width: 1077px) {
 
+
 .row header .fivecol{
 	margin-right: 0;
-
 }
 
 header .row .sevencol .last{
@@ -834,7 +837,7 @@ footer p, blockquote{
 
 footer nav ul{
 	width: 80%;
-	margin: 0 14%;
+	margin: 0 auto;
 }
 
 footer nav ul li{
@@ -856,10 +859,6 @@ footer nav ul li{
 
 
 @media only screen and (max-width: 803px) {
-
-.row{
-	min-width: 350px;
-}
 
 .container.home-image{
 	max-height: 975px;
@@ -931,12 +930,12 @@ footer .threecol{
 }
 
 footer .row .sixcol{
-	width: 80%;
+	width: 100%;
 	margin: 5% 10%;
 }
 
 footer nav{
-	width: 360px;
+	width: 320px;
 	margin: 0 auto;
 }
 
@@ -993,7 +992,7 @@ footer nav ul{
 
 .fivecol.home-detail-content{
 	width: 80%;
-	padding: 54px;
+	padding: 54px 0 54px 54px;
 }
 
 .sixcol.detail-content{
@@ -1068,7 +1067,7 @@ input#domain-search, section#domain select, .detail-content input.domain-button-
 /*--------------------------------------@media mobile-------------------------------*/
 
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
 
 p{
 	font-size: 1.1em!important;
@@ -1077,9 +1076,6 @@ p{
 header{
 	height: 72px;
 	margin-bottom: 72px;
-}
-
-header .row .fivecol{
 }
 
 header h1{
@@ -1109,21 +1105,16 @@ footer{
 
 footer .row.footer .sixcol{
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 }
 
 footer p{
 	display: none;
 }
 
-footer nav{
-	width: 320px;
-}
-
 footer nav ul{
 	overflow: hidden;
 	width: 98%;
-	margin: 0;
 	padding-bottom: 0;
 }
 
@@ -1189,6 +1180,12 @@ footer nav ul li:nth-child(1):hover, footer nav ul li:nth-child(2):hover, footer
 .detail-content h2{
 	font-size: 1.6em;
 }
+
+.detail-content .button{
+	width: 80%;
+	margin: 0 10%;
+}
+
 /*------------------contact form---------------------*/
 
 form#contact-form{
