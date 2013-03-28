@@ -1015,6 +1015,9 @@ input#domain-search, section#domain select, .detail-content input.domain-button-
 	font-size: 1.2em;
 }
 
+input#domain-search{
+	width: 60%;
+}
 
 /*------------------ Hosting Page ---------------------*/
 
@@ -1228,11 +1231,18 @@ form#contact-form{
 
 /*------------------ Domain Name Page ---------------------*/
 
-
+input#domain-search{
+	width: 45%;
+}
 input#domain-search, section#domain select{
 	font-size: 1.6em;
 }
 
+.detail-content input.domain-button-small{
+	clear: both;
+	width: 225px;
+	margin: 0 1%;
+}
 
 } /*---/query---*/
 
