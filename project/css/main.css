@@ -137,7 +137,7 @@ blockquote{
 	margin: 36px 8.004803%; /* 36 from 449.73 (fivecol width) */
 }
 
-input[type="text"], input[type="email"], input#domain-search, textarea, select{
+input[type="text"], input[type="email"], #domain-search, textarea, select{
 	text-transform: uppercase;
 	font-size: 1.8em;
 	color: #848484;
@@ -239,7 +239,6 @@ header{
 
 header h1{
 	float: left;
-	display: inline-block;
 	background: url("../images/logo.png") no-repeat;
 	margin-top: -9px;
 	max-width: 100%;
@@ -259,7 +258,7 @@ header nav ul{
 
 header nav ul li{   
 	float: left;
-	padding: 5px 10px; /* not sure where to get the context width from? */
+	padding: 5px 10px; 
 	border-right: solid 1px #3f3550;
 }
 
@@ -276,7 +275,7 @@ header nav ul li a{
 	text-shadow: 0 1px 0 #473c5a;
 }
 
-header nav ul li a:hover, a.current {
+header nav ul li a:hover, .current {
 	color: #F2D275;
 	transition-duration: .8s;
 }
@@ -474,7 +473,7 @@ footer nav ul{
 
 footer nav ul li{   
 	float: left;
-	padding: 5px 8px; /* not sure where to get the context width from? */
+	padding: 5px 8px; 
 }
 
 footer nav ul li a{
@@ -632,7 +631,7 @@ form.single-line-form-wrapper{
 	overflow: hidden;
 }
 
-section#domain{
+#domain{
 	height: 36px;
 	width: 80%;
 	margin-bottom: 18px;
@@ -641,7 +640,7 @@ section#domain{
 
 }
 
-input#domain-search{
+#domain-search{
 	height: 36px;
 	border: none;
 	-webkit-appearance: none;
@@ -649,7 +648,7 @@ input#domain-search{
 	outline: none;
 }
 
-section#domain select{
+#domain select{
 	float: right;
 	min-width: 28%;
 	height: 36px;
@@ -827,7 +826,7 @@ p{
 	margin-left: 20px;
 }
 
-input#domain-search, section#domain select{
+#domain-search, #domain select{
 	font-size: 1.2em;
 }
 
@@ -1011,11 +1010,11 @@ footer nav ul{
 /*------------------ Domain Name Page ---------------------*/
 
 
-input#domain-search, section#domain select, .detail-content input.domain-button-small{
+#domain-search, #domain select, .detail-content input.domain-button-small{
 	font-size: 1.2em;
 }
 
-input#domain-search{
+#domain-search{
 	width: 60%;
 }
 
@@ -1191,7 +1190,7 @@ footer nav ul li:nth-child(1):hover, footer nav ul li:nth-child(2):hover, footer
 
 /*------------------contact form---------------------*/
 
-form#contact-form{
+#contact-form{
 	width: 250px;
 	padding-right: 0;
 }
@@ -1231,10 +1230,10 @@ form#contact-form{
 
 /*------------------ Domain Name Page ---------------------*/
 
-input#domain-search{
+#domain-search{
 	width: 45%;
 }
-input#domain-search, section#domain select{
+#domain-search, #domain select{
 	font-size: 1.6em;
 }
 
