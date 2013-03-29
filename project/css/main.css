@@ -609,13 +609,6 @@ footer nav ul li a:hover{
 	margin: -15px 0 0 83px;
 }
 
-.captcha{ /* -----------------------------Problems adding captcha --------------------------------------------------------------*/
-	width: 320px;
-	float: right;
-	clear: left;
-	display: none;
-}
-
 .input-label .button-small{
 	width:189px;
 	height:60px;
